@@ -72,8 +72,8 @@ elem.send_keys(f'{Q1}')
 elem.send_keys(Keys.TAB)
 
 #This is for Submition
-#elem = driver.find_element_by_name("btnSubmit")
-#elem.send_keys(Keys.RETURN)
+elem = driver.find_element_by_name("btnSubmit")
+elem.send_keys(Keys.RETURN)
 
 print(driver.title)
 print(driver.current_url)
@@ -81,4 +81,4 @@ print(driver.current_url)
 time.sleep(5)
 
 
-#driver.quit()
+driver.quit()
